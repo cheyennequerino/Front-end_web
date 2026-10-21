@@ -1,0 +1,64 @@
+
+/* Criar estilo para a página */
+body {
+   font-family: 'Tahoma', sans-serif;
+   background-color: #a7aaa7;
+   margin: 5px;
+  
+}
+/* Estilo para a seção principal */
+section {
+  background-color: #548d57;
+  border: 1px solid #8edf58;
+  border-radius: 8px;
+  padding: 20px;
+}
+/* Estilo para os artigos */
+article {
+  background-color: #8d548d;
+  border: 1px solid #8edf58;
+  border-radius: 8px;
+  padding: 20px;
+}
+/* Estilo para o cabeçalho */
+header {
+  color: hsl(246, 39%, 55%);
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+  margin-bottom: 14px;
+  border-bottom: #8d548d;
+  border-width: initial;
+} 
+
+/* Toda vez que precisar trocar a cor do texto, declare a tag que contenha o texto que vai trocar de cor e chame o argumento color */
+h1 {
+  color: #f5ececfb;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+h2 {
+  color: #fcfcfcfb;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+h3 {
+  color: #fcfcfcfb;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+p {
+  color: #fcfcfcfb;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.content {
+  display: flex;
+  flex-direction: columm;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
