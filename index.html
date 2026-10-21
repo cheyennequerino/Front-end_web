@@ -1,17 +1,45 @@
+<!-- Declaração da versão HTML5 para o navegador -->
 <!DOCTYPE html>
+
+<!-- Elemento raiz com definição do idioma da página como Português do Brasil -->
 <html lang="pt-BR">
 <head>
+    <!-- Defina a codificação de caracteres da página  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,0">
-    <title>Document</title>
+    <title>Exemplo Semântico</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-<h1>
-    Olá, mundo!
-    Hello, world!
-</h1>
-<p> Este é um parágrafo de exemplo</p>
-<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, blanditiis. Architecto dignissimos delectus corporis veritatis quia, neque sit culpa illo pariatur hic sapiente assumenda perspiciatis omnis aut! Quisquam, cupiditate accusantium!</p>
-</body>
+    <!-- início do corpo da página -->
+     <header>
+        <h1> Nome do Site </h1>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#blog">Blog</a>
+        </nav>
+     </header>
+        
+        <main class="content">
+            <section id="blog">
+                <h2>Últimos Artigos</h2>
+                <article> 
+                    <h3> Título da Postagem</h3>
+                    <p>Texto do primeiro parágrafo da publicação.</p>
+                </article>
+
+                <article class="cartao-perfil">
+                    <h2 class="cartao-titulo"> Desenvolvedor Back-end</h2>
+                    <p class="cartao-subtitulo">Especialista em desenvolvimento</p> 
+                    <p class="cartao-perfil">Com mais de 5 anos de experiência</p>
+                    <div class="cartao-status"> Disponível para projetos</div>    
+                </article>
+            </section>
+        </main>
+        <footer> 
+        <!-- Rodapé da página -->
+           <p> © 2026 Meu site. Todos direitos reservados. </p>
+        </footer> 
+</body> 
 </html>
 
