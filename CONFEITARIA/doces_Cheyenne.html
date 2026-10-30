@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
     <header>
-       <h1> LCCR </h1>
+        <h1> LCCR </h1>
         <nav>
             <a href="#home">Início</a>
             <a href="#sobre">Sobre</a>
@@ -28,8 +30,8 @@
                 </div>
 
                 <div class="banner-imagem">
-                    <img src="/CONFEITARIA/assets/bolo.svg" alt="Bolo de aniversário em tons de marrom" 
-                    width="600" height="400"/>
+                    <img src="/CONFEITARIA/assets/bolo.svg" alt="Bolo de aniversário em tons de marrom" width="400"
+                        height="400">
                 </div>
             </div>
         </section>
@@ -38,38 +40,39 @@
             <div class="conteudo">
                 <h2>Sobre mim</h2>
                 <p>
-                    Sou Maria faço doces há 10 anos e comecei vendendo para meus vizinhos e hoje atendo festas e encomendas de toda a região.
-                    Uso ingredientes frescos e receitas tradicionais, garantindo sabor e qualidade em cada doce. 
+                    Sou Maria faço doces há 10 anos e comecei vendendo para meus vizinhos e hoje atendo festas e
+                    encomendas de toda a região.
+                    Uso ingredientes frescos e receitas tradicionais, garantindo sabor e qualidade em cada doce.
                 </p>
             </div>
         </section>
 
-        <section id="serviços" class="banner">
+        <section id="servicos">
             <div class="conteudo">
                 <h2>O que faço</h2>
                 <div class="cards">
                     <article class="card">
                         <h3>Bolos de aniversário</h3>
                         <p>Massa fofinha, recheio à sua escolha e decoração no tema da festa.</p>
-                        <p class="card-preço">A partir de R$58,00</p>
+                        <p class="card-preco">A partir de R$58,00</p>
                     </article>
                     <article class="card">
                         <h3>Doces para festa</h3>
                         <p>Brigadeiros gourmet, beijinhos e cajuzinhos em caixas de 12 ou 50 unidades</p>
-                        <p class="card-preço">A partir de R$36,00</p>
+                        <p class="card-preco">A partir de R$36,00</p>
                     </article>
                     <article class="card">
                         <h3>Sobremesas no pote</h3>
                         <p>Porção individual, prática para levar. Sabores que mudam a cada semana.</p>
-                        <p class="card-preço">A partir de R$9,00</p>
+                        <p class="card-preco">A partir de R$9,00</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="preços">
+        <section id="precos">
             <div class="conteudo">
-                <h2>Serviços</h2>
+                <h2>Preços</h2>
                 <table class="tabela">
                     <caption>Bolos e doces feito à mão, com carinho</caption>
                     <thead>
@@ -101,19 +104,54 @@
                             <td colspan="3">Encomendas com 3 dias de antecedência.</td>
                         </tr>
                     </tfoot>
-                </table>     
+                </table>
             </div>
         </section>
 
-        <section id="contato" class="banner">
+        <section id="contato" class="contato">
             <div class="conteudo">
-                <div class="banner-texto">
-                    <h1>Bolos e doces feito à mão, com carinho</h1>
-                    <p>Encomende para o aniversário, o café da tarde ou aquele presente especial.</p>
+                <h2>Fale comigo</h2>
+                <form action="#" method="get">
+                    <div class="campo">
+                        <label for="nome">Seu nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex.: Ana Souza" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(21) 90000-0000">
+                    </div>
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto">
+                            <option value="encomenda">Fazer uma encomenda</option>
+                            <option value="orcamento">Pedir um orçamento</option>
+                            <option value="duvida">Tirar uma dúvida</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="campo">
+                        <legend>Como prefere que eu responda?</legend>
+                        <label class="opcao"><input type="radio" name="resposta" value="whatsapp" checked>
+                            WhatsApp</label>
+                        <label class="opcao"><input type="radio" name="resposta" value="email"> E-mail</label>
+                    </fieldset>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5"
+                            placeholder="Conte o que você precisa e para quando."></textarea>
+                    </div>
                     <a class="botao" href="#contato">Fale comigo</a>
-                </div>
             </div>
-        </section>         
+        </section>
     </main>
+    <footer>
+        <p>₢ Doces da Chey. Página de exemplo feito por mim. 2026.</p>
+    </footer>
 </body>
+
 </html>

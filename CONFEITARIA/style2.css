@@ -2,15 +2,15 @@
         /* ---------- AULA 5: tags (cores e fonte da página) ---------- */
         body {
             margin: 0;
-            font-family: Tahoma, Helvetica, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 18px;
             line-height: 1.6;
             color: #faf9f9;
             background-color: #d39772;
         }
 
-        h1, h2, h3, .logo {
-            font-family: Georgia, "Tahoma", serif;
+        p, h1, h2, h3, .logo {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #8a2b57;
         }
 
@@ -30,6 +30,7 @@
 
         section {
             padding: 48px 24px;
+        
         }
 
         /* guarda o conteúdo num bloco centralizado */
@@ -40,6 +41,7 @@
 
         /* ---------- AULA 5: classes do topo e do banner ---------- */
         header {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #ffffff;
             border-bottom: 4px solid #8a2b57;
             padding: 12px 24px;
@@ -100,6 +102,7 @@
             padding: 12px 28px;
             border-radius: 30px;
             text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
             border: none;
             font-size: 18px;
@@ -135,15 +138,17 @@
 
         /* ---------- AULA 6: tabela de preços ---------- */
         .tabela {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             width: 100%;
             border-collapse: collapse;
             background-color: #ffffff;
         }
 
         .tabela th {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #8a2b57;
             color: #ffffff;
-            text-align: left;
+            text-align: center;
         }
 
         .tabela th,
@@ -161,7 +166,69 @@
         }
 
         .tabela caption {
-            text-align: left;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
             padding-bottom: 8px;
             font-weight: bold;
+            color: #8a2b57;
         }
+        .campo {
+            margin-bottom: 20px;
+        }
+
+        .campo label, legend 
+        {
+            display: block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .campo input[type="text"],
+        .campo input[type="email"],
+        .campo input[type="tel"],
+        .campo select,
+        .campo textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #8a2b57;
+            border-radius: 8px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        fieldset {
+            border: 2px solid #8a2b57;
+            border-radius: 8px;
+        }
+
+        .campo label.opcao {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 16px;
+        }
+
+        /* contorno visível para quem navega só com a tecla Tab */
+        a:focus,
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: 4px solid #1b4dd8;
+            outline-offset: 2px;
+        }
+
+        /* ---------- rodapé ---------- */
+        footer {
+            background-color: #8a2b57;
+            color: #fcfcfc;
+            text-align: right;
+            padding: 18px 20px;
+        }
+        footer p {
+            margin: 0;
+            color: #fcfcfc;
+        }
+    
+</style>
